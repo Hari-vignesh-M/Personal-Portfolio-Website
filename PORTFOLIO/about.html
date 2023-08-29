@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="header1">
+        <div class="container">
+            <nav>
+                <img src="images/hv-.png" class="logo"></img>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="fas fa-times"></i>
+                </ul>
+                <i class="fas fa-bars"></i>
+            </nav>
+            
+        </div>
+    </div>
+  
+  <!-- ----------ABOUT---------- -->
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                
+                <img src="images/pic-.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p><i>I'm HARI VIGNESH M, a passionate and innovative web developer with a strong background in crafting dynamic and user-centric websites. With a keen eye for design and a flair for coding, I thrive on turning complex concepts into functional, visually appealing online experiences.
+                    My journey in web development began with a fascination for the endless possibilities the digital realm offers. Over the years, I've honed my skills in HTML, CSS, and JavaScript to create responsive and interactive websites that engage and captivate users. From elegant landing pages to robust e-commerce platforms, I've had the privilege of translating clients' visions into reality.
+                    My approach blends creativity with technical expertise. I believe in keeping up with the latest trends and best practices in web development, ensuring that each project I undertake is equipped with modern design principles and efficient coding techniques. My goal is not just to build websites, but to create intuitive, seamless user experiences that leave a lasting impact.
+                    Collaboration is at the heart of my work. I enjoy working closely with designers, content creators, and clients to ensure every aspect of a project aligns with the intended goals. Whether it's brainstorming ideas, solving challenges, or refining the final product, I thrive in a collaborative environment that values innovation and teamwork.
+                    
+                </p>
+                <P>
+                    And also I'm a dedicated MEAN stack developer fueled by a desire to create dynamic and robust web applications. With expertise across the MEAN (MongoDB, Express.js, Angular, Node.js) technology stack, I specialize in crafting efficient and seamless solutions that cater to modern user needs.
+                    My venture into the world of MEAN stack development was ignited by a curiosity for how data, interfaces, and server-side technologies intertwine to build feature-rich applications. Armed with proficiency in MongoDB's flexible data management, Express.js's robust web application framework, Angular's powerful frontend capabilities, and Node.js's server-side prowess, I'm equipped to create applications that marry functionality with elegance.<br><br>
+                    Through meticulous coding and architecture design, I create applications that are not only user-friendly but also scalable and maintainable.Collaboration is integral to my development philosophy. I thrive in multidisciplinary teams, working closely with designers and other developers to ensure that every aspect of an application aligns seamlessly. By embracing agile methodologies and staying adaptable, I ensure that my projects evolve with the ever-changing demands of the digital landscape.
+                    Driven by the passion to stay current, I invest time in staying updated with the latest advancements in MEAN stack technologies. From optimizing backend performance to creating interactive frontends, I'm always eager to explore new ways to enhance user experiences.
+                    If you're seeking a MEAN stack developer who's dedicated to transforming concepts into powerful applications, let's connect. Together, we can bring your ideas to life and create digital solutions that make an impact.</i>
+                </P>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                    <p class="tab-links" onclick="openTab('Course Completed')">Internship & course completed</p>
+                    <p class="tab-links" onclick="openTab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>MEAN stack developer</span><br>Building a Full web pages</li>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Course Completed">
+                    <ul>
+                        <li><span>2023</span><br>Internship at Kevell crop.</li>
+                        <li><span>2022-2023</span><br>Web Development</li>
+                        <li><span>2023 - Current</span><br>MEAN stack developer</li>
+                        <li><span>2020-2021</span><br>PYTHON</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>SSLC-2018</span><br>VELAMMAL VIDYALAYA THENI</li>
+                        <li><span>HSC-2020</span><br>AKT HR SEC SCHOOL KALLIKURICHI</li>
+                        <li><span>2020-2024</span><br>SNS COLLEGE OF TECHNOLOGY COIMBATORE</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>copyright @ 2023. Made with <i class="fas fa-heart"></i> by harivignesh</p>
+</div>
+</div>
+
+<script>
+    var tabLinks = document.getElementsByClassName('tab-links');
+    var tabContents = document.getElementsByClassName('tab-contents');
+
+    function openTab(tabName) {
+        for (tabLink of tabLinks) {
+            tabLink.classList.remove('active-link');
+        }
+        for (tabContent of tabContents) {
+            tabContent.classList.remove('active-tab');
+        }
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabName).classList.add('active-tab');
+    }
+
+    // JavaScript for handling the mobile navigation menu
+    document.querySelector('.fas.fa-bars').addEventListener('click', function () {
+        document.querySelector('nav ul').classList.toggle('show');
+    });
+
+    document.querySelector('.fas.fa-times').addEventListener('click', function () {
+        document.querySelector('nav ul').classList.remove('show');
+    });
+
+</script>
+</body>
+
+</html>
