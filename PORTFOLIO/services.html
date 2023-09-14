@@ -16,15 +16,15 @@
         <div class="container">
             <nav>
                 <img src="images/hv-.png" class="logo"></img>
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <i class="fas fa-times"></i>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
            
         </div>
@@ -65,6 +65,16 @@
         <p>copyright @ 2023. Made with <i class="fas fa-heart"></i> by harivignesh</p>
     </div>
 </div>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemeu.style.right =  "0";
+    }
+    function closemenu(){
+        sidemeu.style.right =  "-200px";
+    }
+</script>
 </body>
 
 </html>    
