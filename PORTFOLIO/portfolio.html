@@ -16,62 +16,72 @@
         <div class="container">
             <nav>
                 <img src="images/hv-.png" class="logo"></img>
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <i class="fas fa-times"></i>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             
         </div>
     </div>
  
-            <div id="portfolio">
-                <div class="container">
-                    <h1 class="sub-title">My Works</h1>
-                    <div class="work-list">
-                        <div class="work">
-                            <img src="images/work1.png" alt=""><br>
-                           <br><img src="images/work11.png" alt="">
-                            <div class="layer">
-                                <h2>E-Commerce Website</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quam facere quibusdam
-                                    deserunt dolore vero. Incidunt ea nihil sint. Velit.</p>
-                                <a href="Assessment\index.html"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                        <div class="work">
-                            <img src="images/work2.png" alt=""><br>
-                         <br> <img src="images/work22.png" alt="">
-                            <div class="layer">
-                                <h2>Restaurants Website</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quam facere quibusdam
-                                    deserunt dolore vero. Incidunt ea nihil sint. Velit.</p>
-                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                        <div class="work">
-                            <img src="images/work3.png" alt=""><br>
-                           <br><img src="images/work33.png" alt="">
-                            <div class="layer">
-                                <h2>Online Responsive websites</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quam facere quibusdam
-                                    deserunt dolore vero. Incidunt ea nihil sint. Velit.</p>
-                                <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
+            <!-- ----------PORTFOLIO--------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.png" alt=""><br>
+                   <br><img src="images/work11.png" alt="">
+                    <div class="layer">
+                        <h2>E-Commerce Website</h2>
+                        <p>E-Commerce or Electronics Commerce is a methodology of modern business, which addresses the need of business organizations, 
+                            vendors and customers to reduce cost and improve the quality of goods and services while increasing the speed of delivery..</p>
+                        <a href="Assessment\index.html"><i class="fas fa-external-link-alt"></i></a>
                     </div>
-                    <a href="" class="btn">See more</a>
+                </div>
+                <div class="work">
+                    <img src="images/work2.png" alt=""><br>
+                 <br> <img src="images/work22.png" alt="">
+                    <div class="layer">
+                        <h2>Restaurants Website</h2>
+                        <p>Our restaurants website can let customers place orders without talking to any of your employees. People read your menu, select the items that they want, and submit their orders..</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.png" alt=""><br>
+                   <br><img src="images/work33.png" alt="">
+                    <div class="layer">
+                        <h2>Online Responsive websites</h2>
+                        <p>Responsive or Electronics Commerce is a methodology of modern business, 
+                            which addresses the need of business organizations, vendors and customers to reduce cost and improve the quality of goods and services while increasing the speed of delivery..</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
                 </div>
             </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>       
             <div class="copyright">
                 <p>copyright @ 2023. Made with <i class="fas fa-heart"></i> by harivignesh</p>
             </div>
-        </div>
+</div>
+        <script>
+            var sidemeu = document.getElementById("sidemenu");
+            
+            function openmenu(){
+                sidemeu.style.right =  "0";
+            }
+            function closemenu(){
+                sidemeu.style.right =  "-200px";
+            }
+        </script>
         </body>
 
         </html>                       
