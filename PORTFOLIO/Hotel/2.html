@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html>
+ 
+ <head>
+    
+<title>HK Restaurant</title>
+    
+ </head>
+<style>
+body {
+ 
+  font-family: "Amatic SC", sans-serif;
+ 
+  margin: 0;
+
+  padding: 0;
+}
+
+header {
+
+  background-color: white;
+
+  color: red;
+
+  padding: 1px;
+
+  text-align:top left;
+
+}
+nav ul {
+
+   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+nav li {
+   float: left;
+
+}
+
+
+nav a {
+
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: yellow;
+  color:black;
+}
+.active {
+  background-color: red;
+}
+
+li a, .dropdownbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropdownbtn {
+  background-color: yellow;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+ bg{
+  background-color: yellow;
+  opacity: 1;
+}
+div{
+  border: 1px solid white;
+  background-color: white;chocolate
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  margin:50px 50px 50px 50px;
+  text-align: center; 
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both
+  display: table;
+}
+img p{
+  float: left;
+  border: 1px dotted black;
+  margin: 100px 100px 15px 20px;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color:blue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+footer {
+
+  background-color: #333;
+
+  color: #fff;
+
+  padding: 1em;
+  text-align: center;
+
+}
+</style>
+<body>
+
+       <img src="images\HK.jpeg" width=110 height=103 alt="Not Found">
+    <!--   <img src="..\HTML\images\sns.jpg" width=10% height=25% alt="Not Found">  -->
+ <nav>
+
+      <ul>
+
+        <li><a href="#about">HOME</a></li>
+        <li><a href="a.html">ABOUT US</a></li>
+
+        <li class="dropdown">
+        <a href="javascript:void(0)"class="dropdownbtn">MENU</a>
+        <div class="dropdown-content">
+        <a href="#">Soup</a>
+        <a href="#">Stater</a>
+        <a href="#">Meals</a>
+    </div>
+        <li><a href="#admissions">ORDER</a></li>
+        <li><a href="#admissions">SERVICES</a></li>
+        <li><a href="#admissions">CONTACT</a></li>
+      </ul>
+
+    </nav>
+
+               <bg> <img src="images\1317125.webp" width=100% height=500 alt="Not Found"></bg>
+<main>
+
+<font face="lucida handwriting" size=5>
+<section id="admissions">
+
+ <div> <I><h1>FEAST OFFER ZONE</h1></I></div>
+   <bg align=center><img src="images\offer.jpeg" width=900 height=10% alt="Not Found"></bg>   
+    <bg><img src="images\off.webp" width=350 height=495 alt="Not Found"></bg>   
+
+<div><p>Where every flavor tells a story</div><p>
+<div><p>For those with pure food indulgence in mind, come next door and sate your desires with our ever changing internationally and seasonally inspired small plates.  We love food, lots of different food, just like you.</div><p>
+  </section>
+
+
+<section id="OUR SIGNATURE DISHES">
+                        <div><I><h1>OUR SIGNATURE DISHES</h1></I></div>
+    <div class="row">
+   <div class="column">
+    <img src="images\cc.jpeg" alt="Not Found" style="width:100%"><p>Chicken Chukka Dry</p>
+                     </div>              
+  <div class="column">
+    <img src="images\cp.jpeg" alt="Not Found" style="width:100%"><p>Chicken Pallipalayam</p>
+  </div>
+  <div class="column">
+    <img src="images\mm.jpeg" alt="Not Found" style="width:100%"><p>Madurai Mutton</p>
+  </div>
+   <div class="column">
+    <img src="images\kc.jpeg" alt="Not Found" style="width:100%"><p>Kovai Chicken</p>
+  </div>
+  </div>
+</section>
+
+
+ <section id="about us">
+
+                     <br>   <div><I><h1>About HK Restaurant</h1></I>
+</div><br>
+  <bg> <img src="images\home.jpg" width=25% height=2% alt="Not Found"></bg>
+  
+
+<p>�HK Restaurant�<br>
+
+Since our modest beginnings in 2005 with a little space in Tamil Nadu�s stylish Madurai, �HK Restaurant� �s development has been enlivened with the energy to cook and serve solid, Indian-roused takeout food.
+In contrast to other Indian eateries, �HK Restaurant� was made with the explicit expectation to appear as something else.<br>
+<br>We realize numerous individuals love Indian sustenance, yet a large number of them loathe or are unconscious of the regularly unfortunate fixings that make run-of-the-mill Indian nourishment taste so great.
+Our menu highlights things that utilize the sound and fragrant flavors, however, forget the stuffing ghee, spread, oil, and overwhelming cream.<br>
+<br><bg> <img src="images\h2.jpg" width=25% height=2% alt="Not Found"></bg>
+�HK Restaurant� has developed to incorporate four superb takeout areas in Toronto, with additional to come sooner rather than later. Our group takes pride in the way that we can furnish our new and faithful clients with extraordinary tasting Indian-roused nourishment that is not normal for that some other Indian eateries you visit.
+We perceive that a few people are as yet searching for run-of-the-mill Indian nourishment, and that is fine with us. Our disclaimer is that on the off chance that you�re anticipating overwhelming, slick, undesirable Indian nourishment, �HK Restaurant� isn�t the place for you.<br><br>Our expectation is that you�ll join the developing pattern that such a large number of others have officially found and you will attempt �HK Restaurant� as a remarkable option to other Indian eateries as well as to all other solid sustenance alternatives out there!</p></div>      
+     </section>
+
+<br><h3>HK RESTAURANT REVIEW</h3>
+
+<div>
+  <form action="/action_page.php">
+    <label for="name">Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="email id">Email id</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your email id..">
+     <label for="ph no">Phone number</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your phone number..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="India">India</option>
+      <option value="Singapore">Singapore</option>
+      <option value="Sri lanka">Sri lanka</option>
+      <option value="USA">USA</option>
+       </select>
+<label for="comment">Comment</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your comment..">
+    
+  
+    <input type="submit" value="SEND">
+  </form>
+</div>
+     
+</main>
+
+<footer>
+
+      <p>&copy; HK Restaurant 2023</p>
+
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+ 
+  

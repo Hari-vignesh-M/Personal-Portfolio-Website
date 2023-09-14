@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+</head>    
+<body>
+    <h1 align="center">Online Job Application Form</h1>
+    <h2 style="background-color:DodgerBlue;"align="center">Personal details</h2>
+    <form name="submit-to-google-sheet">
+<table style="width:100%">
+    <tr>
+        <td>First Name</td>
+        <td><input type="text" placeholder="First name"></td> 
+        <td>Middle Name</td>
+        <td><input type="text" placeholder="Middle name"></td>
+        <td>Last Name</td>
+        <td><input type="text" placeholder="Last name"></td>
+    </tr>
+    
+    <tr>
+        <td>Father's Name</td>
+        <td><input type="text" placeholder="Father name"></td>
+        <td>Mother's Name</td>
+        <td><input type="text" placeholder="Mother name"></td>
+    </tr>
+
+    <tr>
+        <td>Date of Birth</td>
+        <td><input type="datetime-local"></td>
+        <td>Place of Birth</td>
+        <td><input type="text" placeholder="place of Birth"></td>   
+    </tr>
+
+    <tr>
+        <td>Select Gender</td>
+        <td></td>
+        <td>Male<input type="checkbox"></td>
+
+        <td>Female<input type="checkbox"></td>
+    </tr> 
+    
+    <tr>
+        <td>Contact Details</td>
+    </tr>
+    <tr>
+        <td>Mobile Number</td>
+        <td><input type="text" placeholder="9xxxxxxxxx"></td>
+        <td>Email id</td>
+        <td><input type="text" placeholder="...@gmail.com"></td>
+    </tr>
+    
+    <tr>
+        <td>Language Known</td>
+        <td></td>  
+        <td>English<input type="checkbox"></td>
+        <td>Bengali<input type="checkbox"></td>
+        <td>Hindi<input type="checkbox"></td>
+    </tr>
+    
+    <tr>
+        <td>Your Mother Tounge</td>
+        <td><select language="language" required>
+            <option value="" disabled selected hidden>Choose a language</option>
+            <option value="English">English</option>
+            <option value="Bengali">Bengali</option>
+            <option value="Hindi">Hindi</option>
+          </select>
+        </td>    
+    </tr>
+
+    <tr>
+        <td>Aadhar Number</td>
+        <td><input type="text" placeholder="xxxxxxx"></td>
+        <td>Pan card Number</td>
+        <td><input type="text" placeholder="xxxxx"></td>
+    </tr>        
+</table>
+<button type="submit" class="btn btn3" align="center" ><b>Submit</b></button>
+</form>
+<span id="msg"></span>
+<br>
+<br>
+<div class="copyright">
+    <p>copyright @ 2023. Made with <i class="fas fa-heart"></i> by harivignesh</p>
+</div>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw8wh9qpPQ1D_dkEte2ciRvt95oypfLL5YqelQWkKauQ38_pcxBOHMNDVkXifrkhjpd/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
