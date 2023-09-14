@@ -1,0 +1,188 @@
+@font-face {
+    font-family: myfont;
+    src: url(./Asset/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: heading-font;
+    src: url(./Asset/Unna-Bold.ttf);
+}
+.h1, h1{
+    font-family: heading-font;
+}
+*{
+    font-family: myfont;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    
+
+}
+body{
+    background: #E5E5E5;
+}
+.head{
+    background: #01370C;
+color: whitesmoke;
+}
+
+
+input::placeholder{
+    font-weight: bold;
+    /* padding: 20px; */
+    
+}
+.form-control{
+    padding-left: 30px !important;
+    
+}
+
+.lens{
+    top: 10px;
+    left: 10px;
+}
+
+.card{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.438);
+}
+.logo li .fa-brands{
+    background: #01370C;
+    
+    border-radius: 50%;
+   
+    color: whitesmoke;
+    margin-left: 10px;
+}
+.logo .fa-twitter{
+    padding:10px;
+    
+}
+.logo .fa-facebook-f{
+     padding:  10px 13px;
+}
+.logo .fa-instagram{
+    padding: 10px 11px;
+}
+footer{
+    background: #436E35;
+    
+}
+.img img{
+    padding: 0 10px;
+}
+
+.last{
+    background: #01370C;
+    color: whitesmoke;
+}
+
+.card-3{
+    margin-top: 8rem;
+}
+.trend-cont{
+    margin-top: 8rem;
+}
+.blog-cont{
+    margin-top: 8rem;
+}
+.hot-cont{
+    margin-top: 8rem;
+}
+.plant-cont{
+    margin-top: 8rem;
+}
+.garden-cont{
+    margin-top: 8rem;
+}
+.celeb-cont{
+    margin-top: 8rem;
+}
+
+.best .h1::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 8px;
+    width: 90%;
+    
+    bottom: -15px;
+    
+    background-color: black;
+}
+
+.trend-cont .h1::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 10px;
+    width: 90%;
+    
+    bottom: -15px;
+    
+    background-color: black;
+
+}
+.blog-cont .h1::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: -20px;
+    width: 150%;
+    
+    bottom: -15px;
+    
+    background: #343434CC;
+
+
+}
+
+.hot-cont .h1::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: -29px;
+    width: 150%;
+    
+    bottom: -15px;
+    
+    background: #343434CC;
+
+}
+.plant-cont .h1::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: -30px;
+    width: 150%;
+    
+    bottom: -15px;
+    
+    background: #343434CC;
+
+}
+.garden-cont .h1::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 0px;
+    width: 100%;
+    
+    bottom: -15px;
+    
+    background: #343434CC;
+
+}
+
+.celeb-cont .h1::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 100px;
+    width: 70%;
+    
+    bottom: -15px;
+    
+    background: #343434CC;
+}

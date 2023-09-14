@@ -1,0 +1,67 @@
+@media (max-width:767px) {
+    .card-3{
+        margin-top:3rem;
+    }
+    .trend-cont{
+        margin-top: 3rem;
+    }
+    .blog-cont{
+        margin-top:3rem;
+    }
+    .hot-cont{
+        margin-top: 3rem;
+    }
+    .plant-cont{
+        margin-top: 3rem;
+    }
+    .garden-cont{
+        margin-top: 3rem;
+    }
+    .celeb-cont{
+        margin-top:3rem;
+    }
+    
+}
+@media (min-width:992px) and (max-width:1199px) {
+    *{
+        font-size: small;
+    }
+    
+}
+@media (max-width:723px) {
+    .last{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .last p, .img{
+        margin: auto;
+    }
+}
+@media (max-width:425px) {
+    .celeb-cont .h1::before{
+        left: 70px;
+    }
+    
+    
+}
+@media (max-width:437px) {
+    .last{
+        font-size: 10px;
+        padding: 5px 0;
+    }
+    
+}
+@media (min-width:974px) {
+    .img{
+        margin-right: -276px;
+    }
+    
+}
+@media (max-width:518px) {
+.head{
+        display: none;
+    }
+    
+}

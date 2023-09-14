@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <!-- tittle -->
+    <title>Ecommerce</title>
+    <link rel="shortcut icon" href="https://www.pngmart.com/files/11/E-Commerce-PNG-Transparent.png"
+        type="image/x-icon">
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- responsive -->
+    <link rel="stylesheet" href="responsive.css">
+
+    <!-- owl-css -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <!-- font-awesome -->
+    <script src="https://kit.fontawesome.com/1d081c499b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- header -->
+    <div class="container-fluid head">
+        <ul class="list-unstyled d-flex justify-content-evenly align-items-center"> 
+            <li>
+            <small class="text-md-center">Use code FIRST50 for a 50% discount on your first order!</small>
+        </li>
+        <li class="img">
+            <img src="./Asset/bucket logo.svg" title="Order Now" class="img-fluid" alt="">
+        
+        
+            <img src="./Asset/contact logo.svg" title="Contact Us" class="img-fluid ms-md-5" alt="">
+        </li></ul>
+        <!-- <div class="d-flex position-relative text-lg-center justify-content-center">
+            <div class="col-lg-10 col-md-8 col-sm-9 text-md-center col-xs-9">
+                <small class="text-md-center">Use code FIRST50 for a 50% discount on your first order!</small>
+            </div>
+            <div class="position-absolue text-end">
+               
+             
+            </div>
+        </div> -->
+    </div>
+
+
+    <!-- nav -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./Asset/plant logo.svg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0 text-center">
+                        <li class="nav-item  px-3">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown px-3">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Plants</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">Neem Plant</li>
+                                <li class="dropdown-item">Palm</li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown px-3">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Planters
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown px-3">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                aria-disabled="true">Essentials</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">BONSAI</li>
+                                <li class="dropdown-item">CACTUS</li>
+                            </ul>
+
+                        </li>
+
+                        <li class="nav-item dropdown px-3">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                aria-disabled="true">Services</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">BONSAI</li>
+                                <li class="dropdown-item">CACTUS</li>
+                            </ul>
+
+                        </li>
+
+
+                    </ul>
+                    <form class="position-relative text-center">
+                        <!-- <img src="./A" class="position-absolute lens" alt=""> -->
+                       <span class="lens position-absolute"> <i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input class="form-control me-2 py-2" type="search" placeholder="  Search" aria-label="Search">
+
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    <!-- nav-finish -->
+
+
+    <!-- bg -->
+    <div class="container-fluid p-0">
+        <img src="./Asset/background plant.svg" class="w-100" alt="">
+    </div>
+    <!-- bg-finish -->
+
+
+    <!-- owl -->
+    <div class="container">
+        <h5 class="text-end mt-5 text-success"><a href="#" class="text-success"> See all </a><img src="./Asset/arrow.svg" alt=""></h5>
+    </div>
+    <div class="container rousel slide">
+        <div class="owl-carousel owl-theme text-center" id="carouselExample">
+            <div class="item ">
+                <img src="./Asset/owl 1.svg" alt="">
+                <p>BONSAI</p>
+            </div>
+            <div class="item">
+                <img src="./Asset/owl 2.svg" alt="">
+                <p>CACTUS</p>
+            </div>
+            <div class="item">
+                <img src="./Asset/owl 3.svg" alt="">
+                <p>CREEPERS</p>
+            </div>
+            <div class="item">
+                <img src="./Asset/owl 4.svg" alt="">
+                <p>Succulents</p>
+            </div>
+            <div class="item">
+                <img src="./Asset/owl 5.svg" alt="">
+                <p>seeds</p>
+            </div>
+            <div class="item">
+                <img src="./Asset/owl 6.svg" alt="">
+                <p>gifting</p>
+            </div>
+            
+            
+        </div>
+        
+    </div>
+    <!-- owl-finish -->
+
+    <!-- 3-card -->
+    <div class="container card-3">
+        <div class="best ">
+        <h1 class="text-center"><span class="h1 position-relative"> Best Selling </span></h1>
+    </div>
+        <div class="row mt-5">
+            <div class="col-lg-4">
+                <div class="card">
+                    <img src="./Asset/card 1.svg" class="card-img-top img-fluid rounded" alt="...">
+                    <div class="card-body px-0">
+
+                        <a href="#" class="btn btn-success w-100 btn-lg ">Shop Now</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4  mt-3 mt-lg-0">
+                <div class="card">
+                    <img src="./Asset/card 2.svg" class="card-img-top img-fluid rounded" alt="...">
+                    <div class="card-body px-0">
+
+                        <a href="#" class="btn btn-success w-100 btn-lg">Shop Now</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4  mt-3 mt-lg-0">
+                <div class="card">
+                    <img src="./Asset/card 3.svg" class="card-img-top img-fluid rounded" alt="...">
+                    <div class="card-body px-0">
+
+                        <a href="#" class="btn btn-success w-100 btn-lg ">Shop Now</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 3-card-finish -->
+
+
+    <!-- treanding-content-1 -->
+    <div class="container trend-cont">
+        <h1 class="text-center"><span class="h1 position-relative">Trending Plants</span></h1>
+        <div class="row mt-5">
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="./Asset/trend-1.svg" class="card-img-top img-fluid rounded" alt="">
+                    <div class="card-body px-0">
+                        <h5 class="card-title fw-bold">Jade Terrarium</h5>
+                        <p class="card-text text-muted fw-bold">$ 350</p>
+                        <a href="#" class="btn btn-success w-100 btn-lg">Buy</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6  mt-3 mt-md-0 mt-lg-0">
+                <div class="card">
+                    <img src="./Asset/trend-2.svg" class="card-img-top img-fluid rounded" alt="">
+                    <div class="card-body px-0">
+                        <h5 class="card-title fw-bold">Ficus Benjamina</h5>
+                        <p class="card-text text-muted fw-bold">$ 350</p>
+                        <a href="#" class="btn btn-success w-100 btn-lg">Buy</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6  mt-3 mt-lg-0">
+                <div class="card">
+                    <img src="./Asset/trend-3.svg" class="card-img-top img-fluid rounded" alt="">
+                    <div class="card-body px-0">
+                        <h5 class="card-title fw-bold">Syngorium Plant</h5>
+                        <p class="card-text text-muted fw-bold">$ 350</p>
+                        <a href="#" class="btn btn-success w-100 btn-lg">Buy</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6  mt-3 mt-lg-0">
+                <div class="card">
+                    <img src="./Asset/trend-4.svg" class="card-img-top img-fluid rounded" alt="">
+                    <div class="card-body px-0">
+                        <h5 class="card-title fw-bold">Cactus Peruvianus</h5>
+                        <p class="card-text text-muted fw-bold">$ 350</p>
+                        <a href="#" class="btn btn-success w-100 btn-lg">Buy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- treanding-content-2 -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="./Asset/trend-5.svg" class="card-img-top img-fluid rounded" alt="">
+                    <div class="card-body px-0">
+                        <h5 class="card-title fw-bold">Chlorophytum Lemon</h5>
+                        <p class="card-text text-muted fw-bold">$ 350</p>
+                        <a href="#" class="btn btn-success w-100 btn-lg">Buy</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6  mt-3 mt-md-0 mt-lg-0">
+                <div class="card">
+                    <img src="./Asset/trend-6.svg" class="card-img-top img-fluid rounded" alt="">
+                    <div class="card-body px-0">
+                        <h5 class="card-title fw-bold">Aloe Rauhii</h5>
+                        <p class="card-text text-muted fw-bold">$ 350</p>
+                        <a href="#" class="btn btn-success w-100 btn-lg">Buy</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6  mt-3 mt-lg-0">
+                <div class="card">
+                    <img src="./Asset/trend 7.svg" class="card-img-top img-fluid rounded" alt="">
+                    <div class="card-body px-0">
+                        <h5 class="card-title fw-bold">Areca Palm</h5>
+                        <p class="card-text text-muted fw-bold">$ 350</p>
+                        <a href="#" class="btn btn-success w-100 btn-lg">Buy</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6  mt-3 mt-lg-0">
+                <div class="card">
+                    <img src="./Asset/trend-8.svg" class="card-img-top img-fluid rounded" alt="">
+                    <div class="card-body px-0">
+                        <h5 class="card-title fw-bold">Sansevieria Black</h5>
+                        <p class="card-text text-muted fw-bold">$ 350</p>
+                        <a href="#" class="btn btn-success w-100 btn-lg">Buy</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- blog-content -->
+
+    <div class="container text-center blog-cont">
+        <h1 class="text-center"><span class="h1 position-relative">Blogs</span></h1>
+        <div class="row mt-5">
+            <div class="col-lg-6">
+                <img src="./Asset/Blog Card 1.svg" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6">
+                <img src="./Asset/Blog Card 2.svg" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- hot sale -->
+    <div class="container hot-cont">
+        <h1 class="text-center"><span class="h1 position-relative">Hot Sale</span></h1>
+        <div class="row mt-5">
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="./Asset/hot 1.svg" alt="" class="card-img-top rounded">
+                    <div class="card-body">
+
+                        <h5 class="card-title fw-bold">Adenium Plant</h5>
+                        <p class="card-text text-muted fw-bold">$ 350 <del class="text-danger">$ 450</del></p>
+                        <a href="#" class="btn btn-success w-100 btn-lg">Buy</a>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6  mt-3 mt-lg-0 mt-md-0">
+                <div class="card">
+                    <img src="./Asset/hot 2.svg" alt="" class="card-img-top rounded">
+                    <div class="card-body">
+
+                        <h5 class="card-title fw-bold">Ficus Twilight</h5>
+                        <p class="card-text text-muted fw-bold">$ 350 <del class="text-danger">$ 450</del></p>
+                        <a href="#" class="btn btn-success w-100 btn-lg">Buy</a>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-3 col-md-6 mt-3 mt-lg-0">
+                <div class="card">
+                    <img src="./Asset/hot 3.svg" alt="" class="card-img-top rounded">
+                    <div class="card-body">
+
+                        <h5 class="card-title fw-bold">Rhoeo Plant</h5>
+                        <p class="card-text text-muted fw-bold">$ 350 <del class="text-danger">$ 450</del></p>
+                        <a href="#" class="btn btn-success w-100 btn-lg">Buy</a>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-3 col-md-6  mt-3 mt-lg-0">
+                <div class="card">
+                    <img src="./Asset/hot 4.svg" alt="" class="card-img-top rounded">
+                    <div class="card-body">
+
+                        <h5 class="card-title fw-bold">Ctenanthe burle</h5>
+                        <p class="card-text text-muted fw-bold">$ 350 <del class="text-danger">$ 450</del></p>
+                        <a href="#" class="btn btn-success w-100 btn-lg">Buy</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- planter -->
+    <div class="container plant-cont">
+        <h1 class="text-center"><span class="h1 position-relative">Planters</span></h1>
+        <div class="row mt-5">
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="./Asset/plan 1.svg" class="card-img-bottom rounded" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Tale Pot</h5>
+                        <p class="card-text text-muted fw-bold">$ 350 <del class="text-danger">$ 450</del></p>
+                        <a href="#" class="btn btn-success btn-lg w-100">Buy</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6  mt-3 mt-lg-0 mt-md-0">
+                <div class="card">
+                    <img src="./Asset/plan 2.png" class="card-img-bottom rounded" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Ice Cream Pot</h5>
+                        <p class="card-text text-muted fw-bold">$ 350 <del class="text-danger">$ 450</del></p>
+                        <a href="#" class="btn btn-success btn-lg w-100">Buy</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6  mt-3 mt-lg-0">
+                <div class="card">
+                    <img src="./Asset/plan 3.svg" class="card-img-bottom rounded" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Beige Fracture</h5>
+                        <p class="card-text text-muted fw-bold">$ 350 <del class="text-danger">$ 450</del></p>
+                        <a href="#" class="btn btn-success btn-lg w-100">Buy</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6  mt-3 mt-lg-0">
+                <div class="card">
+                    <img src="./Asset/plan 4.svg" class="card-img-bottom rounded" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Mint Fusion</h5>
+                        <p class="card-text text-muted fw-bold">$ 350 <del class="text-danger">$ 450</del></p>
+                        <a href="#" class="btn btn-success btn-lg w-100">Buy</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- garden-content -->
+
+    <div class="container garden-cont">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="card-body py-5">
+                    <h1 class="card-title"><span class="h1 position-relative">Landscape</span> Gardening</h1>
+                    <p class="card-text lh-lg fw-bold mt-5">
+                        Whether it is growing your own food or setting
+                        up your roof-top garden, we provide the highest
+                        quality landscaping services, contributing to a greener world and substantial living!
+
+                        <span class="d-block my-4"> Schedule your service appointment today!</span>
+
+                        <span class="text-danger small d-block my-4">*Service only available in Telangana and
+                            AndhraPradesh.</span>
+                    </p>
+                    <a href="#" class="btn btn-success btn-lg px-5">Book Now!</a>
+
+                </div>
+            </div>
+            <div class="col-lg-6 ">
+
+                <img src="./Asset/garden img.svg" class="img-fluid rounded  d-block mx-auto" alt="">
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- celeb-content -->
+    <div class="container celeb-cont">
+        <h1 class="text-center"><span class="h1 position-relative">Celebs You Love,</span> Love Us </h1>
+        <div class="row text-center mt-5">
+            <div class="col-lg-3 col-md-6"><img src="./Asset/1.svg" class="img-fluid" alt=""></div>
+            <div class="col-lg-3 col-md-6"> <img src="./Asset/2.svg" class="img-fluid" alt=""></div>
+            <div class="col-lg-3 col-md-6"> <img src="./Asset/3.svg" class="img-fluid" alt=""></div>
+            <div class="col-lg-3 col-md-6"> <img src="./Asset/4.svg" class="img-fluid" alt=""></div>
+
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="row text-center">
+            <div class="col-lg-4"><img src="./Asset/5.svg" class="img-fluid" alt=""></div>
+            <div class="col-lg-4"><img src="./Asset/6.svg" class="img-fluid" alt=""></div>
+            <div class="col-lg-4"><img src="./Asset/7.svg" class="img-fluid" alt=""></div>
+        </div>
+    </div>
+
+
+
+
+    <!-- footer -->
+    <div class="container-fluid mt-5 p-0">
+        <footer class="">
+            <div class="container">
+                
+                <div class="row p-5 text-white">
+                    <div class="col-lg-3 col-md-4 col-sm-6 align-self-center text-center">
+                        <img src="./Asset/foot-logo.svg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <ul class="list-unstyled">
+                            <li class="fw-bold my-3">Quick Links</li>
+                            <li>About Us</li>
+                            <li>Bulk Order</li>
+                            <li>Gifts</li>
+                            <li>Organic Garden</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6">
+                        <ul class="list-unstyled">
+                            <li class="fw-bold my-3">Legal</li>
+                            <li>T&C</li>
+                            <li>Privacy Policy</li>
+                            <li>Returns </li>
+                            <li>Shipping</li>
+                            <li>Cancellation</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-1 col-md-4 col-sm-6 mt-md-5 mt-sm-0 mt-lg-0">     
+                        <ul class="list-unstyled">
+                            <li class="fw-bold my-3">Support</li>
+                            <li>FAQs</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 mt-3 mt-lg-0  mt-md-5 mt-sm-0 mt-lg-0">
+                        <img src="./Asset/last logo.svg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 mt-3  mt-md-5 mt-sm-0 mt-lg-0">
+                        <p class="text-lg-end my-3"><small>© 2021 Plan A Plant
+                                All Rights Reserved</small></p>
+                        <ul class="list-unstyled d-sm-flex logo">
+                            <li><i class="fa-brands fa-facebook-f mt-3 mt-lg-0" title="facebook"></i></li>
+                            <li><i class="fa-brands fa-instagram mt-3 mt-lg-0" title="instagram"></i> </li>
+                            <li><i class="fa-brands fa-twitter  mt-3 mt-lg-0" title="twitter"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="last d-flex justify-content-center align-items-baseline">
+            <p>We facilitate your payments through trusted gateways</p>
+            <div class="img">
+                <img src="./Asset/soc 1.svg" alt="">
+                <img src="./Asset/soc 2.svg" alt="">
+                <img src="./Asset/soc 3.svg" alt="">
+                <img src="./Asset/soc 4.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- owl script -->
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>$('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true,
+
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })</script>
+
+
+
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
